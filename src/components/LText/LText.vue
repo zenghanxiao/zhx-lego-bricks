@@ -8,15 +8,23 @@ defineOptions({
 })
 
 interface IProps {
-  tag: string
+  tag?: string
+  isEditing?: boolean
 }
 type LProps = Partial<IProps & TextComponentProps>
 const props = withDefaults(defineProps<LProps>(), {
   tag: 'div',
+  isEditing: false,
   ...textDefaultProps,
 })
 
-const { restProps: styleProps } = useRestProps(props, ['tag', 'url', 'text', 'actionType'])
+const { restProps: styleProps } = useRestProps(props, [
+  'isEditing',
+  'tag',
+  'url',
+  'text',
+  'actionType',
+])
 </script>
 
 <template>

@@ -1,5 +1,5 @@
-import LText from './components/LText/LText.vue'
-import LImage from './components/LImage/LImage.vue'
+import LText from './components/LText'
+import LImage from './components/LImage'
 import type { App } from 'vue'
 
 const components = [LText, LImage]

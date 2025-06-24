@@ -8,12 +8,22 @@ defineOptions({
   name: 'LImage',
 })
 
-type LProps = Partial<ImageComponentProps>
+interface IProps {
+  isEditing?: boolean
+}
+type LProps = Partial<IProps & ImageComponentProps>
 const props = withDefaults(defineProps<LProps>(), {
+  isEditing: false,
   ...imageDefaultProps,
 })
 
-const { restProps: styleProps } = useRestProps(props, ['src', 'url', 'text', 'actionType'])
+const { restProps: styleProps } = useRestProps(props, [
+  'isEditing',
+  'src',
+  'url',
+  'text',
+  'actionType',
+])
 </script>
 
 <template>
