@@ -3,6 +3,10 @@ import { textDefaultProps, type TextComponentProps } from '@/types/defaultProps'
 import { handleClick } from '@/utils'
 import { useRestProps } from '@/hooks/useRestProps'
 
+defineOptions({
+  name: 'LText',
+})
+
 interface IProps {
   tag: string
 }

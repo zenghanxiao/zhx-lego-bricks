@@ -3,6 +3,11 @@ import { handleClick } from '@/utils'
 import { useRestProps } from '@/hooks/useRestProps'
 import { imageDefaultProps, type ImageComponentProps } from '@/types/defaultProps'
 import type { CSSProperties } from 'vue'
+
+defineOptions({
+  name: 'LImage',
+})
+
 type LProps = Partial<ImageComponentProps>
 const props = withDefaults(defineProps<LProps>(), {
   ...imageDefaultProps,
