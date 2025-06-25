@@ -6,12 +6,17 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
   },
   "main": "./dist/zhx-bricks.umd.js",
   "module": "./dist/zhx-bricks.es.js",
   "types": "./dist/zhx-bricks.es.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "lodash-es": "^4.17.21"
   },
@@ -19,14 +24,18 @@
     "vue": "^3.5.17"
   },
   "devDependencies": {
+    "@types/jsdom": "^21.1.7",
     "@types/lodash-es": "^4.17.12",
     "@types/node": "^24.0.4",
     "@vitejs/plugin-vue": "^6.0.0",
+    "@vue/test-utils": "^2.4.6",
     "@vue/tsconfig": "^0.7.0",
+    "jsdom": "^26.1.0",
     "typescript": "~5.8.3",
     "vite": "^7.0.0",
     "vite-plugin-dts": "^4.5.4",
     "vite-plugin-libcss": "^1.1.2",
+    "vitest": "^3.2.4",
     "vue-tsc": "^2.2.10"
   }
 }
