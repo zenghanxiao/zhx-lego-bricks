@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { textDefaultProps, type TextComponentProps } from '@/types/defaultProps'
-import { handleClick } from '@/utils'
-import { useRestProps } from '@/hooks/useRestProps'
+import { textDefaultProps, type TextComponentProps } from '../../types/defaultProps'
+import { handleClick } from '../../utils'
+import { useRestProps } from '../../hooks/useRestProps'
 
 defineOptions({
   name: 'LText',

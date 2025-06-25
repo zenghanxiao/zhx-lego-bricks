@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { handleClick } from '@/utils'
-import { useRestProps } from '@/hooks/useRestProps'
-import { imageDefaultProps, type ImageComponentProps } from '@/types/defaultProps'
+import { handleClick } from '../../utils'
+import { useRestProps } from '../../hooks/useRestProps'
+import { imageDefaultProps, type ImageComponentProps } from '../../types/defaultProps'
 import type { CSSProperties } from 'vue'
 
 defineOptions({
